@@ -414,6 +414,7 @@ footer #links-content{
     transform: translateX(-200px);
     list-style: none;
     line-height: 50px;
+    direction: rtl;
 }
 
 footer #links-content li a{
