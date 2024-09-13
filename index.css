@@ -526,8 +526,8 @@ footer #links-content li a{
         flex-direction: column;
     }
     nav .content ul li a{
-        font-size: 10px;
-        margin:0 5px;
+        font-size: 15px;
+        margin:0 15px;
     }
     .welcome .title h1{
         font-size: 50px;
