@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F4F1ED;
+    overflow-x: hidden;
+}
+nav{
+    background-color: #658D8B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+nav .logo img{
+    width: 50px;
+}
+
+nav .content ul{
+    list-style: none;
+    display: flex;
+    width: 50%;
+}
+
+nav .content ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+nav .content ul li:first-child a{
+    color: #623E2A;
+}
+
+nav .content ul li a:hover{
+    color: #623E2A;
+    transition: all ease 0.5s;
+}
+
+.welcome{
+    background-image: url(image/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 690px;
+    text-align: center;
+    position: relative;
+}
+
+.welcome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); 
+    z-index: 1;
+}
+
+.welcome > * {
+    position: relative;
+    z-index: 2; 
+}
+
+.welcome .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+}
+
+.welcome .title h5{
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 600;
+}
+
+.welcome .title h1{
+    font-size: 150px;
+    width: 100%;
+}
+
+.welcome .title h2{
+    margin-top: -20px;
+}
+
+.welcome .title h1, .welcome .title h2{
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.welcome button{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.welcome button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.start{
+    display: flex;
+    justify-content: space-around;
+    height: 690px;
+    padding-top: 50px;
+}
+
+.start .title{
+    width: 40%;
+    height: 70%;
+    position: relative;
+}
+
+.start .img{
+    width: 55%;
+    height: 80%;
+}
+
+.start .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.start .title h1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 50px;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: #623E2A;
+    
+}
+
+.start .title p{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 600;
+    color: #623E2A;
+}
+
+.customer{
+    height:690px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.customer .links{
+    width: 30%;
+    height: 40%;
+    transform: translateY(-100px);
+    position: relative;
+}
+
+.customer .img{
+    width: 60%;
+    height: 70%;
+    transform: translateX(-150px);
+}
+
+.customer h1{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: #623E2A;
+}
+
+.customer  #flowers1{
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+.customer  #flowers2{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.customer .links ul{
+    line-height: 40px;
+}
+
+.customer .links ul li a{
+    text-decoration: none;
+    color: #623E2A;
+}
+
+.customer .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.about{
+    height: 690px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.about #about_flowers{
+    position: absolute;
+    top: -20px;
+    right: 50px;
+    width: 200px;
+    rotate: 180deg;
+}
+
+.about .company{
+    width: 40%;
+    height: 75%;
+    padding: 0 20px;
+}
+
+.about .work{
+    width: 40%;
+    height: 75%;
+    padding: 0 20px;
+}
+
+.about h1{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: #623E2A;
+}
+
+.about .company img , .about .work img{
+    width: 100%;
+}
+
+.about .company h4, .about .work h4{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.about .company p, .about .work p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.info{
+    height: 690px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    color: #623E2A;
+}
+
+.sec1,.sec2,.sec3{
+    height: 100%;
+}
+
+.info .sec1{
+    width: 20%;
+    position: relative;
+    padding: 0 5px;
+}
+
+.info .sec2{
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.info .sec3{
+    width: 20%;
+    position: relative;
+}
+
+.info .sec1 img{
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+}
+.info .sec1 h4{
+    font-size: 30px;
+}
+.info .sec1 p{
+    line-height: 30px;
+}
+
+.info .sec2 img{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+}
+
+.info .sec2 h4{
+    font-size: 30px;
+}
+.info .sec2 p{
+    line-height: 30px;
+}
+
+.info .sec3 img{
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+}
+.info .sec3 h4{
+    font-size: 30px;
+}
+.info .sec3 p{
+    line-height: 30px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 690px;
+    color: #623E2A;
+    position: relative;
+}
+
+.contact img{
+    width: 50%;
+    height: 70%;
+}
+
+.contact .contact-info{
+    width: 50%;
+    height: 70%;
+}
+
+.contact h1{
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.contact ul{
+    line-height: 30px;
+    list-style: none;
+}
+
+.contact #social-media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+}
+
+.contact #social-media li a img{
+    width: 20px;
+    position: absolute;
+    bottom: 10%;
+}
+
+footer{
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer #list-content{
+    width: 30%;
+    transform: translateX(-200px);
+    list-style: none;
+    color: white;
+}
+
+footer #links-content{
+    transform: translateX(-200px);
+    list-style: none;
+    line-height: 50px;
+}
+
+footer #links-content li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media (max-width:2000px) and (min-width:800px)
+{
+    .start .img img{
+        width: 100%;
+        height: 80%;
+    }
+   .start .title h1{
+    font-size: 40px;
+   }
+   .customer .img img{
+    width: 100%;
+    height: 80%;
+    transform: translateX(50px);
+   }
+    .customer .links ul li a{
+    font-size: 10px;
+   }
+   .info .sec2 h4{
+    font-size: 20px;
+   }
+   .contact img , .contact .contact-info{
+    width: 50%;
+    height: 50%;
+   }
+   .contact ul li a{
+    margin: 20px;
+   }
+   footer img{
+    width: 20%;
+   }
+   footer #list-content li p{
+    transform: translateX(100px);
+   }
+   footer #links-content li a{
+    font-size: 30px;
+   }
+   footer #links-content{
+    transform: translateX(30px);
+   }
+}
+
+@media (max-width:799px) and (min-width:600px)
+{
+    nav .content ul li a{
+        font-size: 10px;
+        margin: 0 7px;
+    }
+    .welcome .title h1{
+        font-size: 70px;
+    }
+    .start .title h1{
+        font-size: 40px;
+    }
+    .start .img img{
+        height: 70%;
+        transform: translateY(30px);
+    }
+    .customer{
+        display: flex;
+        flex-direction: column;
+    }
+    .customer .links{
+        width: 100%;
+        transform: translateY(70px);
+    }
+    .customer .img{
+        width: 100%;
+    }
+    .customer .img{
+        width: 55%;
+        height: 45%;
+        transform: translate(70px,-250px);
+    }    
+    .info .sec2 h4{
+        font-size: 20px;
+    }
+    .contact img , .contact .contact-info{
+        width: 50%;
+        height: 50%;
+       }
+       .contact ul li a{
+        margin: 20px;
+       }
+       footer img{
+        width: 20%;
+       }
+       footer #list-content li p{
+        transform: translateX(100px);
+       }
+       footer #links-content li a{
+        font-size: 20px;
+       }
+       footer #links-content{
+        transform: translateX(40px);
+       }
+}
+
+@media (max-width:599px) and (min-width:300px)
+{
+    nav{
+        flex-direction: column;
+    }
+    nav .content ul li a{
+        font-size: 10px;
+        margin:0 5px;
+    }
+    .welcome .title h1{
+        font-size: 50px;
+    }
+    .welcome button{
+        width: 50%;
+    }
+    .start{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .start .title{
+        width: 90%;
+        height: 100%;
+    }
+    
+    .start .img{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .start .title h1{
+        font-size: 30px;
+        transform: translateY(-30px);
+        font-family: "Newsreader", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: #623E2A;
+        
+    }
+    .customer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .customer .links{
+        width: 100%;
+        height: 40%;
+        transform: translateY(70px);
+    }
+    
+    .customer .img{
+        width: 100%;
+        height: 40%;
+        transform: translateX(0);
+    }
+    
+    .customer  #flowers1{
+        display: none;
+    }
+    
+    .customer  #flowers2{
+        display: none;
+    }
+    .about #about_flowers{
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        width: 100px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 1000px;
+    }
+    
+    .about .company{
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .about .work{
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .about h1{
+        position: relative;
+    }
+    .info{
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+    }
+    .info .sec1,
+    .info .sec2,
+    .info .sec3{
+        width: 100%;
+        height: 666px;
+        margin-bottom: 100px;
+    }
+    .info .sec1 img,
+    .info .sec2 img,
+    .info .sec3 img{
+        width: 100%;
+        height: 50%;
+    }
+    .info .sec1 h4,
+    .info .sec2 h4,
+    .info .sec3 h4{
+        font-size: 20px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact img{
+        width: 100%;
+    }
+    .contact .contact-info{
+        width: 100%;
+        position: relative;
+    }
+    .contact #social-media li a img{
+        position: absolute;
+        top: 50%;
+    }
+    .contact ul li a{
+        margin: 20px;
+       }
+    footer{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer img{
+        width: 100%;
+    }
+    footer #list-content{
+        width: 90%;
+        transform: translateX(-2px);
+        flex-wrap: wrap;
+       }
+       footer #links-content li a{
+        font-size: 20px;
+       }
+       footer #links-content{
+        transform: translateX(0px);
+       }
+}
