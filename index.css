@@ -117,12 +117,14 @@ nav .content ul li a:hover{
     justify-content: space-around;
     height: 690px;
     padding-top: 50px;
+    direction: rtl;
 }
 
 .start .title{
     width: 40%;
     height: 70%;
     position: relative;
+    direction: rtl;
 }
 
 .start .img{
@@ -224,6 +226,7 @@ nav .content ul li a:hover{
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    direction: rtl;
 }
 
 .about #about_flowers{
@@ -280,6 +283,7 @@ nav .content ul li a:hover{
     align-items: center;
     position: relative;
     color: #623E2A;
+    direction: rtl;
 }
 
 .sec1,.sec2,.sec3{
@@ -349,6 +353,7 @@ nav .content ul li a:hover{
     height: 690px;
     color: #623E2A;
     position: relative;
+    direction: rtl;
 }
 
 .contact img{
@@ -402,6 +407,7 @@ footer #list-content{
     transform: translateX(-200px);
     list-style: none;
     color: white;
+    direction: rtl;
 }
 
 footer #links-content{
